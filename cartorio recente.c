@@ -1,6 +1,6 @@
-#include <stdio.h> //Biblioteca de ComunicaÁ„o com o usu·rio
-#include <stdlib.h> //Biblioteca de AlocaÁ„o de espaÁo em memÛria
-#include <locale.h>//Biblioteca de alocaÁıes de texto por regi„o 
+#include <stdio.h> //Biblioteca de Comunica√ß√£o com o usu√°rio
+#include <stdlib.h> //Biblioteca de Aloca√ß√£o de espa√ßo em mem√≥ria
+#include <locale.h>//Biblioteca de aloca√ß√µes de texto por regi√£o 
 #include <string.h>//Biblioteca responsavel por cuidar das string
 
 int registro()
@@ -72,12 +72,12 @@ int consultar()
 	
 	if(file == NULL)
 	{
-		printf("n„o foi possivel abrir o arquivo, n„o foi localizado!.\n");
+		printf("n√£o foi possivel abrir o arquivo, n√£o foi localizado!.\n");
 	}
 	
 	while(fgets(conteudo,200, file) != NULL) 
 	{
-		printf("\nEssas s„o as informaÁoes do usuario: ");
+		printf("\nEssas s√£o as informa√ßoes do usuario: ");
 		printf("%s", conteudo);
 		printf("\n\n");
 	}
@@ -89,7 +89,7 @@ int consultar()
 
 int deletar()
 {
-	printf("vocÍ escolheu deletar nomes!\n");
+	printf("voc√™ escolheu deletar nomes!\n");
 	system("pause");
 }
 
@@ -97,7 +97,7 @@ int deletar()
 
 int main()
 	{
-	int opcao=0;//Definindo as vari·veis
+	int opcao=0;//Definindo as vari√°veis
 	int laco=1;
 	
 	for(laco=1;laco=1;)
@@ -107,14 +107,14 @@ int main()
    	
 	 setlocale(LC_ALL,"Portuguese");//Definindo a Linguagem
 	 
-	 printf("### CartÛrio da EBAC ###\n\n");//Inicio do menu 
-	 printf("Escolha a opÁao desejada no menu:\n\n");
+	 printf("### Cart√≥rio da EBAC ###\n\n");//Inicio do menu 
+	 printf("Escolha a op√ßao desejada no menu:\n\n");
 	 printf("\t1 - Registrar nomes\n");
 	 printf("\t2 - Consultar nomes\n");
 	 printf("\t3 - Deletar nomes\n\n");
-	 printf("opÁ„o: "); //Final do menu
+	 printf("op√ß√£o: "); //Final do menu
 	
-	 scanf("%d", &opcao);//Armazenando a escolha do usu·rio
+	 scanf("%d", &opcao);//Armazenando a escolha do usu√°rio
 	
 	 system("cls");
 	 
